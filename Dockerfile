@@ -33,7 +33,7 @@ RUN chmod +x /usr/local/bin/drush
 
 #Move in the entrypoint script
 COPY drupal_entrypoint.sh /usr/local/sbin/entrypoint.sh
-
+echo $PATH
 #Define data volumes
 VOLUME ["/var/www/html"]
 
